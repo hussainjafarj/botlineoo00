@@ -80,7 +80,7 @@ message.channel.send("https://media.discordapp.net/attachments/98338693120958058
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
   client.user.setActivity(`Yivy Av.`, { type: "PLAYING" });
-  client.user.setStatus("idle");
+  client.user.setStatus("online");
   let channel = client.channels.cache.find(r => r.id === "971575695560040498");//ايدي الروم
   if(!channel)return console.log("can't find channel")
   channel.join();
